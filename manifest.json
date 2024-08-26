@@ -1,0 +1,19 @@
+{
+    "name": "test2",
+    "description": "test2",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_title": "test",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "js": ["content.js"],
+          "matches": ["<all_urls>"],
+          "all_frames": true
+        }
+    ],
+    "permissions": ["tabs"],
+    "host_permissions": ["<all_urls>"]
+}

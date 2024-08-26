@@ -1,0 +1,6 @@
+<h1 id="num"></h1>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("num").innerText = (new URL(location.href)).searchParams.get("num")
+})
+</script>
